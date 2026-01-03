@@ -1,0 +1,259 @@
+/* GENESIS SAFARI TOURS - COMPLETE MASTER STYLES 2026 */
+
+:root {
+    --primary-gold: #c5a059;
+    --safari-green: #2d3e2f;
+    --earth-orange: #a64d1d;
+    --sand: #f9f7f2;
+    --white: #ffffff;
+    --dark-stone: #1a1a1a;
+    --light-gray: #f2f0eb;
+    --glass: rgba(255, 255, 255, 0.98);
+}
+
+/* --- Base & Animations --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--sand);
+    color: var(--dark-stone);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--safari-green); }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Navigation & Logo --- */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 8%; background: var(--glass);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    position: sticky; top: 0; z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.logo-container { display: flex; align-items: center; text-decoration: none; gap: 15px; }
+.logo-img { height: 50px; width: auto; object-fit: contain; }
+.logo-text { 
+    font-size: 1.3rem; color: var(--safari-green); font-weight: 700; 
+    letter-spacing: 2px; text-transform: uppercase; 
+}
+
+.nav-links { display: flex; list-style: none; align-items: center; }
+.nav-links li { margin-left: 30px; }
+.nav-links a { 
+    text-decoration: none; color: var(--dark-stone); font-weight: 600; 
+    font-size: 0.85rem; letter-spacing: 1px; transition: 0.3s; 
+}
+.nav-links a:hover { color: var(--earth-orange); }
+
+.menu-toggle { display: none; flex-direction: column; cursor: pointer; gap: 6px; }
+.menu-toggle span { width: 28px; height: 2px; background: var(--safari-green); border-radius: 2px; }
+
+/* --- Hero Section --- */
+.hero {
+    height: 60vh; background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center; 
+    color: white; text-align: center; position: relative;
+}
+.hero::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)); z-index: 1;
+}
+.hero-content { position: relative; z-index: 2; padding: 0 20px; animation: fadeIn 1s ease-out; }
+.hero h1 { color: white; font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 15px; }
+
+/* --- Layout Containers --- */
+.container { 
+    max-width: 1100px; margin: 60px auto; padding: 0 25px; 
+    animation: fadeIn 0.8s ease-out forwards; 
+}
+
+.grid-2, .grid-3 { display: grid; gap: 40px; }
+
+@media (min-width: 850px) {
+    .grid-2 { grid-template-columns: 1fr 1fr; }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* --- Cards & UI Elements --- */
+.price-card { 
+    background: var(--white); border-radius: 15px; padding: 40px; 
+    border-top: 5px solid var(--primary-gold); position: relative; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.04); transition: 0.3s ease;
+}
+.price-card:hover { transform: translateY(-10px); }
+
+.promo-tag { 
+    position: absolute; top: -15px; right: 25px; background: var(--earth-orange); 
+    color: white; padding: 6px 18px; border-radius: 25px; 
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 1px;
+}
+
+.btn-cta { 
+    background: var(--earth-orange); color: white; padding: 16px 35px; 
+    text-decoration: none; border-radius: 50px; font-weight: 600; 
+    display: inline-block; transition: 0.3s; border: none; cursor: pointer;
+    text-align: center; box-shadow: 0 4px 15px rgba(166, 77, 29, 0.2);
+}
+.btn-cta:hover { background: var(--safari-green); transform: scale(1.05); }
+
+/* --- Staff Cards --- */
+.staff-card { background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+.staff-img { width: 100%; height: 350px; object-fit: cover; }
+.staff-info { padding: 30px; text-align: center; }
+.role { 
+    color: var(--earth-orange); font-size: 0.7rem; font-weight: 700; 
+    text-transform: uppercase; display: block; margin-bottom: 10px; letter-spacing: 2px;
+}
+
+/* --- Tables (Transparency Hub) --- */
+.table-container { 
+    overflow-x: auto; margin: 40px 0; border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+}
+table { width: 100%; border-collapse: collapse; background: white; min-width: 600px; }
+th, td { padding: 20px; border-bottom: 1px solid #f0f0f0; text-align: left; }
+th { background: var(--safari-green); color: white; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+
+/* --- Ethics Box --- */
+.ethics-box { 
+    background: var(--safari-green); color: white; padding: 60px 40px; 
+    border-radius: 25px; text-align: center; margin: 80px 0;
+}
+.ethics-box h3 { color: var(--primary-gold); font-size: 2rem; margin-bottom: 20px; }
+
+/* --- Footer --- */
+footer { padding: 80px 20px; background: var(--light-gray); text-align: center; }
+.footer-logo { height: 60px; margin-bottom: 25px; opacity: 0.8; }
+
+/* --- Mobile Breakpoints --- */
+@media (max-width: 900px) {
+    .menu-toggle { display: flex; }
+    .nav-links {
+        display: none; flex-direction: column; position: absolute; 
+        top: 100%; left: 0; width: 100%; background: var(--white); 
+        padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .nav-links.active { display: flex; }
+    .nav-links li { margin: 15px 0; margin-left: 0; text-align: center; }
+    .container { margin: 40px auto; }
+}
+
+/* --- Professional Gallery Overlays --- */
+.gallery-item {
+    position: relative; /* Necessary to position the text inside */
+    overflow: hidden;
+    border-radius: 15px;
+    height: 300px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* The Overlay Container */
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.4s ease;
+    pointer-events: none; /* Allows click to pass through to the image */
+}
+
+/* Text Styling within Overlay */
+.gallery-overlay h4 {
+    color: var(--primary-gold);
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 5px;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.gallery-overlay p {
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    transform: translateY(20px);
+    transition: transform 0.4s ease 0.1s; /* Slight delay for a staggered effect */
+}
+
+/* Hover States */
+.gallery-item:hover .gallery-img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-item:hover .gallery-overlay h4,
+.gallery-item:hover .gallery-overlay p {
+    transform: translateY(0);
+}
+
+/* Mobile Tweak: Show captions slightly by default or on tap */
+@media (max-width: 768px) {
+    .gallery-overlay { opacity: 1; background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%); }
+    .gallery-overlay h4, .gallery-overlay p { transform: translateY(0); }
+    .gallery-item { height: 220px; }
+}
+
+/* --- Lightbox / Image Expansion --- */
+.lightbox-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    cursor: zoom-out;
+    padding: 40px;
+    animation: fadeIn 0.3s ease;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 8px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px; right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lightbox-caption {
+    position: absolute;
+    bottom: 40px;
+    color: var(--primary-gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    text-align: center;
+}

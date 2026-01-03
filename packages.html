@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Collections | Genesis Safari Tours</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo-container">
+        <img src="img/genesis_tours_logo.png" alt="Genesis Logo" class="logo-img">
+        <span class="logo-text">Genesis Safari Tours</span>
+    </a>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="team.html">Our People</a></li>
+        <li><a href="packages.html">Collections</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <header style="text-align: center; margin-bottom: 60px;">
+        <span class="role" style="letter-spacing: 5px;">Specialist Portfolio</span>
+        <h1 style="font-size: 3rem; margin-top: 10px;">Safari Collections</h1>
+        <p style="color: #666; max-width: 650px; margin: 20px auto;">Directorial oversight for Tanzania's premier wildlife circuits. Specialist logistics for both multi-day expeditions and focused day tours.</p>
+    </header>
+
+    <h3 style="margin-bottom: 30px; border-left: 4px solid var(--primary-gold); padding-left: 15px;">Signature Multi-Day</h3>
+    
+    <div class="grid-2" style="margin-bottom: 40px;">
+        <div class="price-card" style="border-top-color: var(--safari-green);">
+            <div class="promo-tag">NEW: 5 DAYS</div>
+            <h3>Serengeti Specialist</h3>
+            <p style="color: var(--earth-orange); font-weight: 600; margin-bottom: 10px;">Central & Western Corridor</p>
+            <p style="font-size: 0.9rem; color: #555;">Designed for those who want to skip the peripheries and immerse themselves entirely in the Serengeti. A logistical masterpiece focusing on predator tracking and the vast savannah horizons. Includes round-trip transit from Arusha.</p>
+            <a href="mailto:info@genesissafari.com?subject=Inquiry: 5-Day Serengeti Specialist" class="btn-cta" style="margin-top: 20px;">Request Itinerary</a>
+        </div>
+
+        <div class="price-card">
+            <div class="promo-tag">5 DAYS</div>
+            <h3>The Big Five Short-Loop</h3>
+            <p style="color: var(--earth-orange); font-weight: 600; margin-bottom: 10px;">Ngorongoro, Manyara & Tarangire</p>
+            <p style="font-size: 0.9rem; color: #555;">A technical circuit designed for maximum wildlife density in a shorter timeframe. Features a full-day descent into the Ngorongoro Caldera managed with Genesis precision.</p>
+            <a href="mailto:info@genesissafari.com?subject=Inquiry: Big Five Short-Loop" class="btn-cta" style="margin-top: 20px;">Request Itinerary</a>
+        </div>
+    </div>
+
+    <div class="price-card" style="margin-bottom: 80px; border-top-color: var(--primary-gold);">
+        <div class="promo-tag">FLAGSHIP: 8 DAYS</div>
+        <div class="grid-2" style="gap: 20px; align-items: center;">
+            <div>
+                <h3>The Great Migration Path</h3>
+                <p style="color: var(--earth-orange); font-weight: 600; margin-bottom: 10px;">Central & Northern Serengeti (Mara River Focus)</p>
+                <p style="font-size: 0.9rem; color: #555;">Follow the rhythmic movement of the herds. This collection focuses on the Mara River crossings and predator action of the Seronera Valley. Our most comprehensive logistical deployment.</p>
+            </div>
+            <div style="text-align: right;">
+                <a href="mailto:info@genesissafari.com?subject=Inquiry: Great Migration Path" class="btn-cta">Request Full Itinerary</a>
+            </div>
+        </div>
+    </div>
+
+    <h3 style="margin-bottom: 30px; border-left: 4px solid var(--primary-gold); padding-left: 15px;">Day Tours & Professional Logistics</h3>
+    <div class="grid-3" style="margin-bottom: 100px;">
+        <div class="price-card">
+            <h4>Tarangire Day Express</h4>
+            <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Sunrise departure from Arusha to the land of Baobabs. Includes private 4x4 vehicle and gourmet picnic lunch.</p>
+        </div>
+        <div class="price-card">
+            <h4>Arusha National Park</h4>
+            <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Walking safaris and Momella Lakes. The perfect transition tour for arrival or departure days at the foot of Mt. Meru.</p>
+        </div>
+        <div class="price-card" style="border-top-color: var(--safari-green);">
+            <h4>Airport JRO/ARK Transfers</h4>
+            <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Reliable meet-and-greet logistics from Kilimanjaro International or Arusha Airport with our professional drivers.</p>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; margin-bottom: 10px;">The Field Gallery</h2>
+    <div class="grid-3 gallery">
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="img/elephant_tarangire.jpeg" alt="African Bush Elephant" class="gallery-img">
+            <div class="gallery-overlay">
+                <h4>African Bush Elephant</h4>
+                <p>Tarangire National Park. Click to Expand View</p>
+            </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="img/antelope_tarangire.jpeg" alt="Tarangire Antelopes" class="gallery-img">
+            <div class="gallery-overlay"><h4>Antelopes Grazing</h4><p>Click to Expand View</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="img/giraffe.jpeg" alt="giraffe" class="gallery-img">
+            <div class="gallery-overlay"><h4>A Giraffe wandering</h4><p>Click to Expand View</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="img/parade_of_elephants.jpeg" alt="parade of elephants" class="gallery-img">
+            <div class="gallery-overlay"><h4>A Parade of Elephants</h4><p>Click to Expand View</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="img/views_from_tarangire_safari_lodge.jpeg" alt="views from lodge" class="gallery-img">
+            <div class="gallery-overlay"><h4>Views from Tarangire</h4><p>Click to Expand View</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="img/zebra.jpeg" alt="zebra" class="gallery-img">
+            <div class="gallery-overlay"><h4>A Zebra</h4><p>Click to Expand View</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="img/elephant.jpeg" alt="elephant" class="gallery-img">
+            <div class="gallery-overlay"><h4>An Elephant</h4><p>Click to Expand View</p></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="img/tower_of_giraffes.jpeg" alt="tower of giraffes" class="gallery-img">
+            <div class="gallery-overlay"><h4>A Tower of Giraffes</h4><p>Click to Expand View</p></div>
+        </div>
+    </div>
+</div>
+
+<div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Expanded View">
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+</div>
+
+<footer>
+    <img src="img/genesis_tours_logo.png" alt="Genesis Logo" class="footer-logo">
+    <p>&copy; 2026 Genesis Safari Tours | Arusha, Tanzania</p>
+</footer>
+
+<script>
+    function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }
+    function openLightbox(element) {
+        document.getElementById('lightbox-img').src = element.querySelector('img').src;
+        document.getElementById('lightbox-caption').innerText = element.querySelector('h4').innerText;
+        document.getElementById('lightbox').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+</script>
+
+</body>
+</html>

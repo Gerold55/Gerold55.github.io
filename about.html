@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | Genesis Safari Tours</title>
+    <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo-container">
+        <img src="img/genesis_tours_logo.png" alt="Genesis Logo" class="logo-img">
+        <span class="logo-text">Genesis Safari Tours</span>
+    </a>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="team.html">Our People</a></li>
+        <li><a href="packages.html">Collections</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1 style="text-align: center; margin-bottom: 50px;">The Genesis Standard</h1>
+    
+    <section class="grid-2" style="margin-bottom: 80px;">
+        <div class="price-card">
+            <h3>Reliability by Design</h3>
+            <p>Genesis Safari Tours was built to solve the inconsistency of the Tanzanian safari circuit. We closed the gap by taking full control of the supply chain—owning the workshop and leading the team that makes it possible.</p>
+        </div>
+        <div class="price-card" style="border-top-color: var(--earth-orange);">
+            <h3>Professional Rigor</h3>
+            <p>We believe that luxury hospitality deserves a transport partner that mirrors its excellence. This is why every vehicle undergoes a 50-point inspection in our Arusha facility before every departure.</p>
+        </div>
+    </section>
+
+    <div class="ethics-box">
+        <img src="img/genesis_tours_logo.png" alt="Genesis Icon" style="height: 50px; margin-bottom: 20px; filter: brightness(0) invert(1);">
+        <h3>Directorial Promise</h3>
+        <p style="font-style: italic; max-width: 800px; margin: 0 auto;">"We provide more than a drive; we provide a bridge to the wild, managed with the transparency and ethical rigor that our workers and guests deserve."</p>
+    </div>
+</div>
+
+<footer>
+    <img src="img/genesis_tours_logo.png" alt="Genesis Logo" class="footer-logo">
+    <p>&copy; 2026 Genesis Safari Tours | Arusha, Tanzania</p>
+</footer>
+
+<script>function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }</script>
+</body>
+</html>
