@@ -499,9 +499,10 @@ footer {
     }
 }
 
+/* Disable hover behavior on mobile */
 @media (max-width: 768px) {
-    .img-wrapper:active .overlay {
-        opacity: 1 !important;
-        pointer-events: auto;
+    .img-wrapper:hover .overlay {
+        opacity: 0 !important;
     }
 }
+
