@@ -289,17 +289,45 @@ footer {
     }
 }
 
-/* --- Mobile Breakpoints --- */
-@media (max-width: 900px) {
-    .menu-toggle { display: flex; }
-    .nav-links {
-        display: none; flex-direction: column; position: absolute; 
-        top: 100%; left: 0; width: 100%; background: var(--white); 
-        padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
-    .nav-links.active { display: flex; }
-    .nav-links li { margin: 15px 0; margin-left: 0; text-align: center; }
-    .container { margin: 40px auto; }
+/* --- Lightbox / Image Expansion --- */
+.lightbox-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    cursor: zoom-out;
+    padding: 40px;
+    animation: fadeIn 0.3s ease;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 8px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px; right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lightbox-caption {
+    position: absolute;
+    bottom: 40px;
+    color: var(--primary-gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 /* --- Professional Gallery Overlays --- */
@@ -373,136 +401,102 @@ footer {
     .gallery-item { height: 220px; }
 }
 
-/* --- Lightbox / Image Expansion --- */
-.lightbox-overlay {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.95);
-    display: none; /* Hidden by default */
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
-    cursor: zoom-out;
-    padding: 40px;
-    animation: fadeIn 0.3s ease;
-}
-
-.lightbox-overlay img {
-    max-width: 90%;
-    max-height: 85vh;
-    border-radius: 8px;
-    box-shadow: 0 0 50px rgba(0,0,0,0.5);
-    object-fit: contain;
-}
-
-.lightbox-close {
-    position: absolute;
-    top: 30px; right: 40px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.lightbox-caption {
-    position: absolute;
-    bottom: 40px;
-    color: var(--primary-gold);
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-/* --- Mobile Responsive Adjustments --- */
-@media (max-width: 900px) {
-    .grid-3 {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-}
-
-@media (max-width: 600px) {
-    .grid-3 {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .staff-card {
-        width: 100%;
-    }
-
-    .staff-img {
-        height: 280px; /* smaller images for phones */
-    }
-
-    .staff-info h4 {
-        font-size: 1.3rem;
-    }
-
-    .subcomment {
-        font-size: 0.85rem;
-    }
-
-    /* Ethics box mobile spacing */
-    .ethics-box {
-        padding: 40px 20px;
-        border-radius: 15px;
-        margin: 60px 0;
-    }
-
-    /* Full-width bleed fix for mobile */
-    .full-width-bleed {
-        margin-left: calc(-50vw + 50%);
-        margin-right: calc(-50vw + 50%);
-    }
-}
-
-/* Navbar mobile */
+/* ============================
+   MOBILE NAVIGATION (≤ 768px)
+   ============================ */
 @media (max-width: 768px) {
+
+    /* Navbar becomes positioning parent */
+    .navbar {
+        position: sticky;
+        top: 0;
+        position: relative;
+        z-index: 9999;
+    }
+
+    /* Force hamburger to appear on ALL phones */
+    .menu-toggle {
+        display: flex !important;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        z-index: 99999;
+    }
+
+    .menu-toggle span {
+        width: 28px;
+        height: 3px;
+        background: var(--safari-green);
+        border-radius: 2px;
+    }
+
+    /* Mobile dropdown menu */
     .nav-links {
         position: absolute;
-        top: 70px;
+        top: 100px; /* adjust 90–110px depending on navbar height */
         right: 0;
-        background: white;
         width: 100%;
+        background: white;
         display: none;
         flex-direction: column;
         padding: 20px 0;
         box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        z-index: 9998;
     }
 
+    /* When hamburger is tapped */
     .nav-links.active {
-        display: flex;
+        display: flex !important;
     }
 
     .nav-links li {
         margin: 10px 0;
         text-align: center;
     }
-
-    .menu-toggle {
-        display: block;
-    }
 }
 
-/* --- Mobile Overlay Fix --- */
+/* ============================
+   MOBILE OVERLAY (FINAL FIX)
+   ============================ */
 @media (max-width: 768px) {
-    .overlay {
-        opacity: 0;              /* stay hidden */
-        pointer-events: none;    /* prevent accidental blocking */
+
+    /* Ensure wrapper receives taps */
+    .img-wrapper {
+        position: relative;
+        z-index: 50;
     }
 
+    /* Default: overlay hidden */
+    .overlay {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s ease;
+        z-index: 60;
+    }
+
+    /* Tap to reveal overlay */
     .img-wrapper:active .overlay {
-        opacity: 1;              /* show on tap */
+        opacity: 1;
         pointer-events: auto;
     }
-}
 
-/* Disable hover behavior on mobile */
-@media (max-width: 768px) {
+    /* Disable hover on mobile */
     .img-wrapper:hover .overlay {
         opacity: 0 !important;
     }
 }
 
+@media (max-width: 900px) {
+    .menu-toggle { display: flex; }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+}
