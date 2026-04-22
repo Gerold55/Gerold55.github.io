@@ -484,3 +484,16 @@ footer {
         display: block;
     }
 }
+
+/* --- Mobile Overlay Fix --- */
+@media (max-width: 768px) {
+    .overlay {
+        opacity: 0;              /* stay hidden */
+        pointer-events: none;    /* prevent accidental blocking */
+    }
+
+    .img-wrapper:active .overlay {
+        opacity: 1;              /* show on tap */
+        pointer-events: auto;
+    }
+}
