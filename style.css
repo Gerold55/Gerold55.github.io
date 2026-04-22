@@ -75,6 +75,40 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--safari-gre
     animation: fadeIn 0.8s ease-out forwards; 
 }
 
+/* About + Mascot Sections */
+.about-section, .mascot-section {
+    max-width: 900px;
+    margin: 0 auto 80px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.about-section h2, .mascot-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--earth-orange);
+    text-align: center;
+}
+
+.about-section p, .mascot-section p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    color: #333;
+    text-align: center;
+}
+
+/* Optional subtle divider between paragraphs */
+.about-section p + p,
+.mascot-section p + p {
+    margin-top: 10px;
+}
+
 .grid-2, .grid-3 { display: grid; gap: 40px; }
 
 @media (min-width: 850px) {
@@ -182,10 +216,21 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
 
 /* --- Ethics Box --- */
 .ethics-box { 
-    background: var(--safari-green); color: white; padding: 60px 40px; 
-    border-radius: 25px; text-align: center; margin: 80px 0;
+    background: var(--safari-green);
+    color: white;
+    padding: 60px 40px;
+    border-radius: 25px;
+    text-align: center;
+    margin: 80px auto;          /* centers it */
+    max-width: 800px;           /* prevents full-width stretch */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
-.ethics-box h3 { color: var(--primary-gold); font-size: 2rem; margin-bottom: 20px; }
+
+.ethics-box h3 { 
+    color: var(--primary-gold);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
 
 /* --- Mobile-Perfect Footer --- */
 footer {
