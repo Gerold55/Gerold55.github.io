@@ -412,3 +412,75 @@ footer {
     font-size: 1.5rem;
     text-align: center;
 }
+
+/* --- Mobile Responsive Adjustments --- */
+@media (max-width: 900px) {
+    .grid-3 {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .staff-card {
+        width: 100%;
+    }
+
+    .staff-img {
+        height: 280px; /* smaller images for phones */
+    }
+
+    .staff-info h4 {
+        font-size: 1.3rem;
+    }
+
+    .subcomment {
+        font-size: 0.85rem;
+    }
+
+    /* Ethics box mobile spacing */
+    .ethics-box {
+        padding: 40px 20px;
+        border-radius: 15px;
+        margin: 60px 0;
+    }
+
+    /* Full-width bleed fix for mobile */
+    .full-width-bleed {
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+    }
+}
+
+/* Navbar mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
