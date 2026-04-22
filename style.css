@@ -498,3 +498,10 @@ footer {
         pointer-events: auto;
     }
 }
+
+@media (max-width: 768px) {
+    .img-wrapper:active .overlay {
+        opacity: 1 !important;
+        pointer-events: auto;
+    }
+}
