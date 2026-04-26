@@ -578,6 +578,6 @@ footer {
 
 	.hero-content p {
     margin-top: 0;          /* Brings the paragraph closer to the h1 */
-	padding-bottom: 20px;         /* Removes space at the top */
+	padding-bottom: 50px;         /* Removes space at the top */
 	}
 }
