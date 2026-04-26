@@ -585,7 +585,7 @@ footer {
 
     .hero-content p {
         margin-top: 0;          
-        padding-bottom: 15px;   /* Reduced from 30px to help the button move up */
+        padding-bottom: 5px;   /* Reduced from 30px to help the button move up */
     }
     
     .hero-content .role {
