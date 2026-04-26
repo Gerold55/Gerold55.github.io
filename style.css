@@ -554,7 +554,7 @@ footer {
         max-width: 240px;        /* Slightly narrower for a sleeker look */
         
         /* THE MOVERS: Pulls it up significantly */
-        margin: -25px auto 0 !important; 
+        margin: -50px auto 0 !important; 
         
         /* THE THINNERS: Lower vertical padding makes it thinner */
         padding: 16px 35px; 
@@ -575,7 +575,7 @@ footer {
 
     .hero-content {
         padding-top: 0;         
-        margin-top: 0px;      
+        margin-top: -10px;      
     }
 
     .hero-content h1 {
