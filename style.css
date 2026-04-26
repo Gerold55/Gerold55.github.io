@@ -581,4 +581,9 @@ footer {
     margin-top: 0;          /* Brings the paragraph closer to the h1 */
 	padding-bottom: 30px;         /* Removes space at the top */
 	}
+	.hero-content .role {
+        display: inline-block; /* Allows margins to push away from the top */
+        margin-top: 40px !important; /* Increases the gap from the top of the hero/nav */
+        margin-bottom: 10px; /* Keeps it tight to the H1 below it */
+    }
 }
