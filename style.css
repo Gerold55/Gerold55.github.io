@@ -554,7 +554,7 @@ footer {
         max-width: 300px;        /* Prevents it from getting TOO wide */
         margin: 0 auto;          /* Centers it if using the max-width above */
         padding: 18px 20px;      /* Slightly taller for easier thumb-tapping */
-		padding-bottom: 30px;         /* Removes space at the top */
+		padding-bottom: 20px;         /* Removes space at the top */
         font-size: 1.1rem;       /* Ensures text is legible and clear */
         box-shadow: 0 6px 20px rgba(166, 77, 29, 0.3); /* Stronger shadow for depth on mobile */
     }
@@ -581,9 +581,10 @@ footer {
     margin-top: 0;          /* Brings the paragraph closer to the h1 */
 	padding-bottom: 30px;         /* Removes space at the top */
 	}
+	
 	.hero-content .role {
         display: inline-block; /* Allows margins to push away from the top */
-        margin-top: 40px !important; /* Increases the gap from the top of the hero/nav */
+        margin-top: 60px !important; /* Increases the gap from the top of the hero/nav */
         margin-bottom: 10px; /* Keeps it tight to the H1 below it */
     }
 }
