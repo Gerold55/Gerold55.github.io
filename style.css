@@ -553,6 +553,7 @@ footer {
         width: 100%;             /* Optional: ensures it spans the container */
         max-width: 300px;        /* Prevents it from getting TOO wide */
         margin: 0 auto;          /* Centers it if using the max-width above */
+		margin-top: -20px;
         padding: 18px 20px;      /* Slightly taller for easier thumb-tapping */
         font-size: 1.1rem;       /* Ensures text is legible and clear */
         box-shadow: 0 6px 20px rgba(166, 77, 29, 0.3); /* Stronger shadow for depth on mobile */
