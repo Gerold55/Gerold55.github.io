@@ -551,12 +551,18 @@ footer {
     .btn-cta {
         display: block;          
         width: 100%;             
-        max-width: 260px;        /* Reduced from 300px to make it thinner */
-        margin: -30px auto 0;    /* Added -15px top margin to pull it up */
-        padding: 14px 15px;      /* Reduced vertical/horizontal padding for a thinner look */
-        font-size: 1rem;         /* Slightly smaller font to match the thinner button */
-        box-shadow: 0 6px 20px rgba(166, 77, 29, 0.3);
+        max-width: 240px;        /* Slightly narrower for a sleeker look */
+        
+        /* THE MOVERS: Pulls it up significantly */
+        margin: -25px auto 0 !important; 
+        
+        /* THE THINNERS: Lower vertical padding makes it thinner */
+        padding: 10px 15px;      
+        
+        font-size: 0.95rem;      /* Smaller text helps the button look thinner */
+        border-radius: 50px;
         text-align: center;
+        box-shadow: 0 4px 12px rgba(166, 77, 29, 0.2);
     }
 
     .btn-cta:active {            
@@ -574,7 +580,7 @@ footer {
 
     .hero-content h1 {
         margin-top: 0;          /* Fixed: was "10", now 0 for proper spacing */
-        margin-bottom: 10px;    
+        margin-bottom: 5px;    
     }
 
     .hero-content p {
