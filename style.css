@@ -566,13 +566,17 @@ footer {
     .btn-cta:hover {
         transform: none;
     }
+	.hero-content {
+    padding-top: 0;         /* Removes space at the top */
+    margin-top: -40px;      /* Nudges the entire block (h1, p, and button) up */
+	}
 
 	.hero-content h1 {
     margin-top: 0;          /* Removes default top space */
     margin-bottom: 10px;    /* Tightens the gap between the headline and the paragraph */
-}
+	}
 
-.hero-content p {
+	.hero-content p {
     margin-top: 0;          /* Brings the paragraph closer to the h1 */
-}
+	}
 }
