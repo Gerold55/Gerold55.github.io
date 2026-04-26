@@ -31,34 +31,68 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--safari-gre
 
 /* --- Navigation & Logo --- */
 .navbar {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 12px 8%; background: var(--glass);
-    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-    position: sticky; top: 0; z-index: 1000;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8%;
+    background: #726449;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    /* Depth + separation */
+    box-shadow:
+    0 4px 20px rgba(0,0,0,0.25),
+    inset 0 0 20px rgba(0,0,0,0.25);
 }
 
 .logo-container { display: flex; align-items: center; text-decoration: none; gap: 15px; }
-.logo-img { height: 50px; width: auto; object-fit: contain; }
+.logo-img { height: 60px; width: auto; object-fit: contain; }
 .logo-text { 
     font-size: 1.3rem; color: var(--safari-green); font-weight: 700; 
     letter-spacing: 2px; text-transform: uppercase; 
 }
 
-.nav-links { display: flex; list-style: none; align-items: center; }
-.nav-links li { margin-left: 30px; }
-.nav-links a { 
-    text-decoration: none; color: var(--dark-stone); font-weight: 600; 
-    font-size: 0.85rem; letter-spacing: 1px; transition: 0.3s; 
+.logo-text-img {
+    height: 40px;      /* adjust to match your logo height */
+    margin-left: 10px; /* spacing between icon + text image */
+    margin-right: -10px; /* spacing between icon + text image */
+    margin-top: -5px; /* spacing between icon + text image */
+    object-fit: contain;
 }
-.nav-links a:hover { color: var(--earth-orange); }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f5f1e8; /* warm ivory for contrast */
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1.2px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #c9a86a; /* safari gold */
+    text-shadow: 0 0 6px rgba(201,168,106,0.6); /* soft gold glow */
+}
 
 .menu-toggle { display: none; flex-direction: column; cursor: pointer; gap: 6px; }
 .menu-toggle span { width: 28px; height: 2px; background: var(--safari-green); border-radius: 2px; }
 
 /* --- Hero Section --- */
 .hero {
-    height: 60vh; background-size: cover; background-position: center;
+    height: 80vh; background-size: cover; background-position: center;
     display: flex; align-items: center; justify-content: center; 
     color: white; text-align: center; position: relative;
 }
