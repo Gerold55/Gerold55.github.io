@@ -579,7 +579,7 @@ footer {
     }
 
     .hero-content h1 {
-        margin-top: 0;          /* Fixed: was "10", now 0 for proper spacing */
+        margin-top: -10px;          /* Fixed: was "10", now 0 for proper spacing */
         margin-bottom: 5px;    
     }
 
