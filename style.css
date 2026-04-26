@@ -549,42 +549,42 @@ footer {
 /* Mobile Adjustments */
 @media screen and (max-width: 768px) {
     .btn-cta {
-        display: block;          /* Makes the button full-width if needed */
-        width: 100%;             /* Optional: ensures it spans the container */
-        max-width: 300px;        /* Prevents it from getting TOO wide */
-        margin: 0 auto;          /* Centers it if using the max-width above */
-        padding: 18px 20px;      /* Slightly taller for easier thumb-tapping */
-		padding-bottom: 20px;         /* Removes space at the top */
-        font-size: 1.1rem;       /* Ensures text is legible and clear */
-        box-shadow: 0 6px 20px rgba(166, 77, 29, 0.3); /* Stronger shadow for depth on mobile */
+        display: block;          
+        width: 100%;             
+        max-width: 260px;        /* Reduced from 300px to make it thinner */
+        margin: -15px auto 0;    /* Added -15px top margin to pull it up */
+        padding: 14px 15px;      /* Reduced vertical/horizontal padding for a thinner look */
+        font-size: 1rem;         /* Slightly smaller font to match the thinner button */
+        box-shadow: 0 6px 20px rgba(166, 77, 29, 0.3);
+        text-align: center;
     }
 
-    .btn-cta:active {            /* Better feedback for touch than hover */
-        transform: scale(0.98);  /* Gives a "pressed" feeling */
+    .btn-cta:active {            
+        transform: scale(0.98);  
     }
     
-    /* Disables the hover scale on mobile to prevent "sticky" hover states */
     .btn-cta:hover {
         transform: none;
     }
-	.hero-content {
-    padding-top: 0;         /* Removes space at the top */
-    margin-top: -10px;      /* Nudges the entire block (h1, p, and button) up */
-	}
 
-	.hero-content h1 {
-    margin-top: 10;          /* Removes default top space */
-    margin-bottom: 10px;    /* Tightens the gap between the headline and the paragraph */
-	}
+    .hero-content {
+        padding-top: 0;         
+        margin-top: -10px;      
+    }
 
-	.hero-content p {
-    margin-top: 0;          /* Brings the paragraph closer to the h1 */
-	padding-bottom: 30px;         /* Removes space at the top */
-	}
-	
-	.hero-content .role {
-        display: inline-block; /* Allows margins to push away from the top */
-        margin-top: 60px !important; /* Increases the gap from the top of the hero/nav */
-        margin-bottom: 10px; /* Keeps it tight to the H1 below it */
+    .hero-content h1 {
+        margin-top: 0;          /* Fixed: was "10", now 0 for proper spacing */
+        margin-bottom: 10px;    
+    }
+
+    .hero-content p {
+        margin-top: 0;          
+        padding-bottom: 15px;   /* Reduced from 30px to help the button move up */
+    }
+    
+    .hero-content .role {
+        display: inline-block; 
+        margin-top: 60px !important; 
+        margin-bottom: 10px; 
     }
 }
