@@ -552,7 +552,7 @@ footer {
         display: block;          
         width: 100%;             
         max-width: 260px;        /* Reduced from 300px to make it thinner */
-        margin: -15px auto 0;    /* Added -15px top margin to pull it up */
+        margin: -30px auto 0;    /* Added -15px top margin to pull it up */
         padding: 14px 15px;      /* Reduced vertical/horizontal padding for a thinner look */
         font-size: 1rem;         /* Slightly smaller font to match the thinner button */
         box-shadow: 0 6px 20px rgba(166, 77, 29, 0.3);
@@ -584,7 +584,7 @@ footer {
     
     .hero-content .role {
         display: inline-block; 
-        margin-top: 60px !important; 
+        margin-top: 70px !important; 
         margin-bottom: 10px; 
     }
 }
