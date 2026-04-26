@@ -569,7 +569,7 @@ footer {
     }
 	.hero-content {
     padding-top: 0;         /* Removes space at the top */
-    margin-top: -40px;      /* Nudges the entire block (h1, p, and button) up */
+    margin-top: -10px;      /* Nudges the entire block (h1, p, and button) up */
 	}
 
 	.hero-content h1 {
