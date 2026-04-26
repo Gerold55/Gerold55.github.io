@@ -572,7 +572,7 @@ footer {
 	}
 
 	.hero-content h1 {
-    margin-top: 0;          /* Removes default top space */
+    margin-top: 10;          /* Removes default top space */
     margin-bottom: 10px;    /* Tightens the gap between the headline and the paragraph */
 	}
 
