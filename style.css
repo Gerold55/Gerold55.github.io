@@ -549,26 +549,21 @@ footer {
 /* Mobile Adjustments */
 @media screen and (max-width: 768px) {
     .btn-cta {
-        display: block;          
-        width: 100%;             
-        max-width: 240px;        /* Slightly narrower for a sleeker look */
-        
-        /* THE MOVERS: Pulls it up significantly */
-        margin: -50px auto 0 !important; 
-        
-        /* THE THINNERS: Lower vertical padding makes it thinner */
-        padding: 16px 35px; 
-        
-        font-size: 0.95rem;      /* Smaller text helps the button look thinner */
-        border-radius: 30px;
-        text-align: center;
-        box-shadow: 0 4px 12px rgba(166, 77, 29, 0.2);
+        display: block;          /* Makes the button full-width if needed */
+        width: 100%;             /* Optional: ensures it spans the container */
+        max-width: 300px;        /* Prevents it from getting TOO wide */
+        margin: 0 auto;          /* Centers it if using the max-width above */
+        margin-top: -20px;
+        padding: 18px 20px;      /* Slightly taller for easier thumb-tapping */
+        font-size: 1.1rem;       /* Ensures text is legible and clear */
+        box-shadow: 0 6px 20px rgba(166, 77, 29, 0.3); /* Stronger shadow for depth on mobile */
     }
 
-    .btn-cta:active {            
-        transform: scale(0.98);  
+    .btn-cta:active {            /* Better feedback for touch than hover */
+        transform: scale(0.98);  /* Gives a "pressed" feeling */
     }
     
+    /* Disables the hover scale on mobile to prevent "sticky" hover states */
     .btn-cta:hover {
         transform: none;
     }
