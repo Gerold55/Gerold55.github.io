@@ -557,7 +557,7 @@ footer {
         margin: -25px auto 0 !important; 
         
         /* THE THINNERS: Lower vertical padding makes it thinner */
-        padding: 10px 15px;      
+        padding: 16px 35px; 
         
         font-size: 0.95rem;      /* Smaller text helps the button look thinner */
         border-radius: 30px;
