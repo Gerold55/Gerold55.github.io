@@ -1108,7 +1108,7 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
     .menu-toggle span {
         width: 28px;
         height: 3px;
-        background: #726449;
+        background: #000000;
         border-radius: 2px;
     }
 
@@ -1117,7 +1117,7 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
         top: 100%;
         left: 0;
         width: 100%;
-        background: #000000;
+        background: #726449;
         display: none;
         flex-direction: column;
         padding: 20px 0;
