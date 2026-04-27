@@ -779,26 +779,95 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
         1px 1px 2px rgba(0,0,0,0.28);
 }
 
-/* --- THE MOBILE FIX --- */
+/* ============================
+   FOOTER — MOBILE VERSION
+   ============================ */
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center; /* Centers all text for a clean look */
-        align-items: center;
-        gap: 30px;
+
+    /* Footer wrapper */
+    .dd-footer {
+        padding: 30px 0 40px;
+        border-top: 2px solid #c8c2b8;
     }
 
-    .footer-section {
+    /* Stack columns vertically */
+    .dd-footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+        padding: 0 20px;
+    }
+
+    /* Each column becomes full-width */
+    .dd-footer-col {
+        min-width: unset;
         width: 100%;
     }
 
-    .social-links {
-        justify-content: center; /* Centers icons on mobile */
+    /* Brand column centered */
+    .dd-brand-col {
+        flex: unset;
+        width: 100%;
+        text-align: center;
     }
 
-    .footer-bottom {
-        flex-direction: column;
-        gap: 10px;
+    .dd-footer-logo {
+        height: 45px;
+        margin-bottom: 14px;
+    }
+
+    .dd-footer-text {
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: 0.9rem;
+        line-height: 1.55;
+    }
+
+    /* Titles centered */
+    .dd-footer-title {
+        font-size: 1rem;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    /* Links + text */
+    .dd-footer-col a,
+    .dd-footer-col p {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    /* Social icons centered */
+    .dd-social-links {
+        justify-content: center;
+        margin-top: 16px;
+        gap: 14px;
+    }
+
+    .dd-social-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .dd-social-icon img {
+        width: 17px;
+        height: 17px;
+    }
+
+    /* Footer bottom */
+    .dd-footer-bottom {
+        margin-top: 40px;
+        padding-top: 18px;
+        border-top: 1px solid #d0d0d0;
+        text-align: center;
+    }
+
+    .dd-footer-bottom p {
+        font-size: 0.75rem;
+        letter-spacing: 1.2px;
+        margin: 4px 0;
     }
 }
 
