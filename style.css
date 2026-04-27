@@ -919,7 +919,6 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
    ============================ */
 @media (max-width: 768px) {
 
-    /* Navbar becomes positioning parent */
     .navbar {
         position: sticky;
         top: 0;
@@ -938,17 +937,17 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
     .menu-toggle span {
         width: 28px;
         height: 3px;
-        background: #726449; /* NEW COLOR */
+        background: #726449; /* brand color */
         border-radius: 2px;
     }
 
     /* Mobile dropdown menu */
     .nav-links {
         position: absolute;
-        top: 100px; /* adjust if needed */
-        right: 0;
+        top: 100%;
+        left: 0;
         width: 100%;
-        background: #726449; /* NEW: matches brand tone */
+        background: #726449; /* brand tone */
         display: none;
         flex-direction: column;
         padding: 20px 0;
@@ -956,21 +955,34 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
         z-index: 9998;
     }
 
-    /* When hamburger is tapped */
     .nav-links.active {
         display: flex !important;
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 12px 0;
         text-align: center;
     }
 
     .nav-links a {
-        color: white !important; /* NEW: white text */
+        color: white !important;
         font-size: 1.1rem;
         padding: 10px 0;
         display: block;
+    }
+}
+
+/* ============================
+   REMOVE CONFLICTING BLOCK
+   (max-width: 900px)
+   ============================ */
+
+/* This block was overriding your real mobile nav.
+   We replace it with a harmless helper rule. */
+
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: flex;
     }
 }
 
