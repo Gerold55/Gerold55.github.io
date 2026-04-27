@@ -1121,11 +1121,15 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
         text-align: center;
     }
 
+    /* Ensure the image fits the screen */
     .about-image img {
-        height: 260px;
+        width: 100%;
+        height: auto;          /* prevents cropping issues */
+        max-height: 260px;     /* optional: keeps it elegant */
+        object-fit: cover;
         border-radius: 12px;
     }
-
+	
     /* VIDEO (if used) */
     .about-video {
         max-height: 260px;
