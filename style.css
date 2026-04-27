@@ -666,11 +666,13 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
     margin-bottom: 20px;
 }
 
-/* --- Premium Tightened Footer --- */
 .dd-footer {
     background: var(--light-gray);
-    padding: 18px 0 28px;      /* slightly more breathing room */
-    margin-top: 0px;          /* cleaner separation from content */
+    padding: 18px 0 28px;
+    margin-top: 0px;
+
+    /* NEW — elegant top border */
+    border-top: 2px solid #c8c2b8; /* soft, premium safari-neutral tone */
 }
 
 /* Container */
