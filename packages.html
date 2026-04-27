@@ -3,15 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dusk & Dawn Safari | Arusha, Tanzania</title>
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="img/android-chrome-512x512.png">
-    <link rel="manifest" href="site.webmanifest">
+    <title>Safari Collections | Dusk & Dawn Safari</title>
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -20,7 +12,7 @@
 
 <nav class="navbar">
     <a href="index.html" class="logo-container">
-        <img src="img/logo.png" alt="Genesis Logo" class="logo-img">
+        <img src="img/logo.png" alt="Dusk & Dawn Safari Logo" class="logo-img">
     </a>
     <div class="menu-toggle" onclick="toggleMenu()">
         <span></span><span></span><span></span>
@@ -29,158 +21,153 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">Our Story</a></li>
         <li><a href="team.html">Our People</a></li>
-        <li><a href="packages.html">Collections</a></li>
+        <li><a href="packages.html" class="active">Collections</a></li>
     </ul>
 </nav>
 
-<div class="container">
-    <header style="text-align: center; margin-bottom: 60px;">
-        <span class="role" style="letter-spacing: 5px;">Specialist Portfolio</span>
-        <h1 style="font-size: 3rem; margin-top: 10px;">Safari Collections</h1>
-        <p style="color: #666; max-width: 650px; margin: 20px auto;">Directorial oversight for Tanzania's premier wildlife circuits. Specialist logistics for both multi-day expeditions and focused day tours.</p>
-    </header>
+<main class="collections-page">
 
-    <h3 style="margin-bottom: 30px; border-left: 4px solid var(--primary-gold); padding-left: 15px;">Signature Multi-Day</h3>
-    
-    <div class="grid-2" style="margin-bottom: 40px;">
-        <div class="price-card" style="border-top-color: var(--safari-green);">
-            <div class="promo-tag">NEW: 5 DAYS</div>
-            <h3>Serengeti Specialist</h3>
-            <p style="color: var(--earth-orange); font-weight: 600; margin-bottom: 10px;">Central & Western Corridor</p>
-            <p style="font-size: 0.9rem; color: #555;">Designed for those who want to skip the peripheries and immerse themselves entirely in the Serengeti. A logistical masterpiece focusing on predator tracking and the vast savannah horizons. Includes round-trip transit from Arusha.</p>
-            <a href="mailto:info@genesissafari.com?subject=Inquiry: 5-Day Serengeti Specialist" class="btn-cta" style="margin-top: 20px;">Request Itinerary</a>
-        </div>
+    <!-- HERO -->
+    <section class="collections-hero">
+        <span class="collections-tag">Specialist Portfolio</span>
+        <h1>Safari Collections</h1>
+        <p>Directorial oversight for Tanzania's premier wildlife circuits. Specialist logistics for both multi-day expeditions and focused day tours.</p>
+    </section>
 
-        <div class="price-card">
-            <div class="promo-tag">5 DAYS</div>
-            <h3>The Big Five Short-Loop</h3>
-            <p style="color: var(--earth-orange); font-weight: 600; margin-bottom: 10px;">Ngorongoro, Manyara & Tarangire</p>
-            <p style="font-size: 0.9rem; color: #555;">A technical circuit designed for maximum wildlife density in a shorter timeframe. Features a full-day descent into the Ngorongoro Caldera managed with Genesis precision.</p>
-            <a href="mailto:info@genesissafari.com?subject=Inquiry: Big Five Short-Loop" class="btn-cta" style="margin-top: 20px;">Request Itinerary</a>
-        </div>
-    </div>
-
-    <div class="price-card" style="margin-bottom: 80px; border-top-color: var(--primary-gold);">
-        <div class="promo-tag">FLAGSHIP: 8 DAYS</div>
-        <div class="grid-2" style="gap: 20px; align-items: center;">
-            <div>
-                <h3>The Great Migration Path</h3>
-                <p style="color: var(--earth-orange); font-weight: 600; margin-bottom: 10px;">Central & Northern Serengeti (Mara River Focus)</p>
-                <p style="font-size: 0.9rem; color: #555;">Follow the rhythmic movement of the herds. This collection focuses on the Mara River crossings and predator action of the Seronera Valley. Our most comprehensive logistical deployment.</p>
+    <!-- SIGNATURE COLLECTIONS -->
+    <section class="collections-grid">
+        <!-- Serengeti Specialist -->
+        <article class="collection-card">
+            <div class="collection-image serengeti-bg"></div>
+            <div class="collection-body">
+                <h2>Serengeti Specialist</h2>
+                <p class="collection-tagline">The Great Migration, up close and unfiltered.</p>
+                <ul>
+                    <li>Central Serengeti</li>
+                    <li>Migration tracking</li>
+                    <li>Sunrise game drives</li>
+                    <li>Premium tented camps</li>
+                </ul>
+                <a href="#" class="btn-collection">Explore Collection</a>
             </div>
-            <div style="text-align: right;">
-                <a href="mailto:info@genesissafari.com?subject=Inquiry: Great Migration Path" class="btn-cta">Request Full Itinerary</a>
+        </article>
+
+        <!-- Big Five Loop -->
+        <article class="collection-card">
+            <div class="collection-image bigfive-bg"></div>
+            <div class="collection-body">
+                <h2>The Big Five Loop</h2>
+                <p class="collection-tagline">A curated circuit through Tanzania’s most iconic wildlife territories.</p>
+                <ul>
+                    <li>Tarangire</li>
+                    <li>Ngorongoro Crater</li>
+                    <li>Serengeti</li>
+                    <li>Lake Manyara</li>
+                </ul>
+                <a href="#" class="btn-collection">View Itinerary</a>
             </div>
-        </div>
-    </div>
+        </article>
 
-    <h3 style="margin-bottom: 30px; border-left: 4px solid var(--primary-gold); padding-left: 15px;">Day Tours & Professional Logistics</h3>
-    <div class="grid-3" style="margin-bottom: 100px;">
-        <div class="price-card">
-            <h4>Tarangire Day Express</h4>
-            <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Sunrise departure from Arusha to the land of Baobabs. Includes private 4x4 vehicle and gourmet picnic lunch.</p>
-        </div>
-        <div class="price-card">
-            <h4>Arusha National Park</h4>
-            <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Walking safaris and Momella Lakes. The perfect transition tour for arrival or departure days at the foot of Mt. Meru.</p>
-        </div>
-        <div class="price-card" style="border-top-color: var(--safari-green);">
-            <h4>Airport JRO/ARK Transfers</h4>
-            <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Reliable meet-and-greet logistics from Kilimanjaro International or Arusha Airport with our professional drivers.</p>
-        </div>
-    </div>
-
-    <h2 style="text-align: center; margin-bottom: 10px;">The Field Gallery</h2>
-    <div class="grid-3 gallery">
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="img/elephant_tarangire.jpeg" alt="African Bush Elephant" class="gallery-img">
-            <div class="gallery-overlay">
-                <h4>African Bush Elephant</h4>
-                <p>Tarangire National Park. Click to Expand View</p>
+        <!-- Day Collections -->
+        <article class="collection-card">
+            <div class="collection-image day-bg"></div>
+            <div class="collection-body">
+                <h2>Day Collections</h2>
+                <p class="collection-tagline">Focused, high-impact day tours for tight schedules.</p>
+                <ul>
+                    <li>Arusha National Park</li>
+                    <li>Materuni Waterfalls</li>
+                    <li>Chemka Hot Springs</li>
+                    <li>Cultural tours</li>
+                </ul>
+                <a href="#" class="btn-collection">See Day Options</a>
             </div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="img/antelope_tarangire.jpeg" alt="Tarangire Antelopes" class="gallery-img">
-            <div class="gallery-overlay"><h4>Antelopes Grazing</h4><p>Click to Expand View</p></div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="img/giraffe.jpeg" alt="giraffe" class="gallery-img">
-            <div class="gallery-overlay"><h4>A Giraffe wandering</h4><p>Click to Expand View</p></div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="img/parade_of_elephants.jpeg" alt="parade of elephants" class="gallery-img">
-            <div class="gallery-overlay"><h4>A Parade of Elephants</h4><p>Click to Expand View</p></div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="img/views_from_tarangire_safari_lodge.jpeg" alt="views from lodge" class="gallery-img">
-            <div class="gallery-overlay"><h4>Views from Tarangire</h4><p>Click to Expand View</p></div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="img/zebra.jpeg" alt="zebra" class="gallery-img">
-            <div class="gallery-overlay"><h4>A Zebra</h4><p>Click to Expand View</p></div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="img/elephant.jpeg" alt="elephant" class="gallery-img">
-            <div class="gallery-overlay"><h4>An Elephant</h4><p>Click to Expand View</p></div>
-        </div>
-        <div class="gallery-item" onclick="openLightbox(this)">
-            <img src="img/tower_of_giraffes.jpeg" alt="tower of giraffes" class="gallery-img">
-            <div class="gallery-overlay"><h4>A Tower of Giraffes</h4><p>Click to Expand View</p></div>
-        </div>
-    </div>
-</div>
+        </article>
+    </section>
 
-<div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
-    <span class="lightbox-close">&times;</span>
-    <img id="lightbox-img" src="" alt="Expanded View">
-    <div id="lightbox-caption" class="lightbox-caption"></div>
-</div>
+    <!-- DIRECTORIAL STANDARD -->
+    <section class="directorial-standard">
+        <h3>Our Directorial Standard</h3>
+        <p>Every collection is designed with intention—balancing wildlife density, travel rhythm, and guest experience.</p>
+    </section>
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-section" style="flex: 1.5;">
-            <img src="img/genesis_tours_logo.png" alt="Genesis Logo" style="height: 50px; margin-bottom: 15px;">
-            <p>Arusha-based directorial oversight for Tanzania's premier wildlife circuits.</p>
-            <div class="social-links">
-                <a href="#" class="social-icon">IG</a>
-                <a href="#" class="social-icon">FB</a>
-                <a href="https://wa.me/255000000000" class="social-icon" target="_blank">WA</a>
+    <!-- ENHANCE YOUR EXPERIENCE -->
+    <section class="enhance-section">
+        <h3>Enhance Your Experience</h3>
+        <div class="enhance-grid">
+            <div class="enhance-item">
+                <h4>Night Game Drive</h4>
+                <p>Witness nocturnal wildlife in Tarangire or Serengeti under moonlight.</p>
+            </div>
+            <div class="enhance-item">
+                <h4>Cultural Immersion Day</h4>
+                <p>Visit Maasai or Meru communities for storytelling and traditional meals.</p>
+            </div>
+            <div class="enhance-item">
+                <h4>Luxury Lodge Upgrade</h4>
+                <p>Upgrade to boutique lodges with cinematic views and private verandas.</p>
+            </div>
+            <div class="enhance-item">
+                <h4>Faith & Wilderness Reflection</h4>
+                <p>Guided dawn meditation or devotional moments in the savanna.</p>
             </div>
         </div>
+    </section>
 
-        <div class="footer-section">
-            <h4>Tours</h4>
+</main>
+
+<footer class="dd-footer">
+    <div class="dd-footer-container">
+
+        <!-- Brand + Description + Social -->
+        <div class="dd-footer-col dd-brand-col">
+            <img src="img/logo.png" alt="Dusk & Dawn Safari Logo" class="dd-footer-logo">
+
+            <p class="dd-footer-text">
+                Arusha-based directorial oversight for Tanzania's premier wildlife circuits.
+            </p>
+
+            <div class="dd-social-links">
+                <a href="https://facebook.com" target="_blank" class="dd-social-icon">
+					<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+				</a>
+				<a href="https://instagram.com" target="_blank" class="dd-social-icon">
+					<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+				</a>
+				<a href="https://wa.me/255000000000" target="_blank" class="dd-social-icon">
+					<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+				</a>
+            </div>
+        </div>
+
+        <!-- Tours -->
+        <div class="dd-footer-col">
+            <h4 class="dd-footer-title">Tours</h4>
             <a href="packages.html">Serengeti Specialist</a>
             <a href="packages.html">The Big Five Loop</a>
             <a href="packages.html">Day Collections</a>
         </div>
 
-        <div class="footer-section">
-            <h4>Contact</h4>
+        <!-- Contact -->
+        <div class="dd-footer-col">
+            <h4 class="dd-footer-title">Contact</h4>
             <p>Arusha, Tanzania</p>
-            <a href="mailto:info@genesissafari.com">info@genesissafari.com</a>
+            <a href="mailto:info@duskanddawnsafari.com">info@duskanddawnsafari.com</a>
             <p>+255 000 000 000</p>
         </div>
+
     </div>
 
-    <div class="footer-bottom">
-        <p>&copy; 2026 Genesis Safari Tours.</p>
-        <p>TALA Licensed | Registered Arusha Office</p>
+    <div class="dd-footer-bottom">
+        <p>&copy; 2026 Dusk & Dawn Safari</p>
+        <p>TALA Licensed • Registered Arusha Office</p>
     </div>
 </footer>
 
 <script>
-    function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }
-    function openLightbox(element) {
-        document.getElementById('lightbox-img').src = element.querySelector('img').src;
-        document.getElementById('lightbox-caption').innerText = element.querySelector('h4').innerText;
-        document.getElementById('lightbox').style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-    }
-    function closeLightbox() {
-        document.getElementById('lightbox').style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
+function toggleMenu() { 
+    document.getElementById('navLinks').classList.toggle('active'); 
+}
 </script>
 
 </body>
