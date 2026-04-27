@@ -1086,18 +1086,59 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
     }
 }
 
-@media (max-width: 900px) {
-    .menu-toggle { display: flex; }
-    .nav-links {
-        display: none;
+/* ============================
+   MOBILE + TABLET NAV (≤ 1024px)
+   ============================ */
+@media (max-width: 1024px) {
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+    }
+
+    .menu-toggle {
+        display: flex !important;
         flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        z-index: 99999;
+    }
+
+    .menu-toggle span {
+        width: 28px;
+        height: 3px;
+        background: #726449;
+        border-radius: 2px;
+    }
+
+    .nav-links {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background: #A9773D;   /* ← THIS BLOCK OVERRIDES YOUR REAL MOBILE MENU */
-        padding: 40px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        background: #726449;
+        display: none;
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        z-index: 9998;
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    .nav-links li {
+        margin: 12px 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        color: white !important;
+        font-size: 1.1rem;
+        padding: 10px 0;
+        display: block;
     }
 }
 
