@@ -1103,6 +1103,7 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
         gap: 6px;
         cursor: pointer;
         z-index: 99999;
+		color: #000000;
     }
 
     .menu-toggle span {
