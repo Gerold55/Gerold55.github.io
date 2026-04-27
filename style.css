@@ -1074,3 +1074,151 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
         margin-bottom: 10px;
     }
 }
+
+/* ============================
+   ABOUT PAGE — MOBILE VERSION
+   ============================ */
+@media (max-width: 768px) {
+
+    /* HERO */
+    .hero-slim {
+        padding: 40px 20px;
+        margin-bottom: 50px;
+        border-radius: 12px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-inner {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    /* STORY SPLIT → STACKED */
+    .about-split {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+        padding: 0 10px;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .about-image img {
+        height: 260px;
+        border-radius: 12px;
+    }
+
+    /* VIDEO (if used) */
+    .about-video {
+        max-height: 260px;
+        border-radius: 10px;
+    }
+
+    /* WHY DUSK & DAWN */
+    .about-feature {
+        margin-bottom: 60px;
+        padding: 0 15px;
+    }
+
+    .about-feature h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-feature p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    /* GALLERY → 1 COLUMN */
+    .about-gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+        margin-bottom: 60px;
+    }
+
+    .about-gallery img,
+    .gallery-video {
+        height: 240px;
+        border-radius: 12px;
+    }
+
+    /* VALUES SECTION */
+    .values-section {
+        margin-bottom: 40px;
+        padding: 0 15px;
+    }
+
+    .values-title {
+        font-size: 1.8rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .values-strip {
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 0;
+        padding: 0 10px;
+    }
+
+    .value-box {
+        padding: 28px 20px;
+        border-radius: 12px;
+    }
+
+    .value-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .value-box p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    /* DIRECTORIAL PROMISE */
+    .director-section {
+        max-width: 100%;
+        padding: 20px 15px;
+        margin-bottom: 50px;
+    }
+
+    .director-logo {
+        height: 55px;
+        margin-bottom: 8px;
+    }
+
+    .director-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .director-quote {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+    /* GLOBAL SPACING */
+    section {
+        margin-bottom: 60px;
+    }
+}
