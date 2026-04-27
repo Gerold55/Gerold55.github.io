@@ -1026,7 +1026,7 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
         top: 100%;
         left: 0;
         width: 100%;
-        background: #888888;   /* ← THIS BLOCK OVERRIDES YOUR REAL MOBILE MENU */
+        background: #A9773D;   /* ← THIS BLOCK OVERRIDES YOUR REAL MOBILE MENU */
         padding: 40px;
         box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
