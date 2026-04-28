@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dusk & Dawn Safari | Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="index.html" class="logo-container">
+        <img src="img/logo.png" alt="Dusk & Dawn Safari Logo" class="logo-img">
+    </a>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="team.html">Our People</a></li>
+        <li><a href="packages.html">Collections</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+		<li><a href="faq.html">FAQ</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero-slim">
+    <div class="hero-inner">
+        <h1 class="hero-title">Gallery</h1>
+        <p class="hero-subtitle">Moments from the Wild</p>
+    </div>
+</section>
+
+<!-- GALLERY GRID -->
+<section class="gallery-page">
+    <div class="gallery-grid">
+
+        <!-- Example Image -->
+        <div class="gallery-item">
+            <img src="img/sample1.jpg" alt="Safari Image" class="gallery-img">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/sample2.jpg" alt="Safari Image" class="gallery-img">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/sample3.jpg" alt="Safari Image" class="gallery-img">
+        </div>
+
+        <!-- Add as many as you want -->
+    </div>
+</section>
+
+<footer class="dd-footer">
+    <div class="dd-footer-container">
+
+        <!-- Brand + Description + Social -->
+        <div class="dd-footer-col dd-brand-col">
+            <img src="img/logo.png" alt="Dusk & Dawn Safari Logo" class="dd-footer-logo">
+
+            <p class="dd-footer-text">
+                Arusha-based directorial oversight for Tanzania's premier wildlife circuits.
+            </p>
+
+            <div class="dd-social-links">
+                <a href="https://facebook.com" target="_blank" class="dd-social-icon">
+					<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+				</a>
+				<a href="https://instagram.com" target="_blank" class="dd-social-icon">
+					<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+				</a>
+				<a href="https://wa.me/255000000000" target="_blank" class="dd-social-icon">
+					<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+				</a>
+            </div>
+        </div>
+
+        <!-- Tours -->
+        <div class="dd-footer-col">
+            <h4 class="dd-footer-title">Tours</h4>
+            <a href="packages.html">Serengeti Specialist</a>
+            <a href="packages.html">The Big Five Loop</a>
+            <a href="packages.html">Day Collections</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="dd-footer-col">
+            <h4 class="dd-footer-title">Contact</h4>
+            <p>Arusha, Tanzania</p>
+            <a href="mailto:info@duskanddawnsafari.com">info@duskanddawnsafari.com</a>
+            <p>+255 000 000 000</p>
+        </div>
+
+    </div>
+
+    <div class="dd-footer-bottom">
+        <p>&copy; 2026 Dusk & Dawn Safari</p>
+        <p>TALA Licensed • Registered Arusha Office</p>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() { 
+    document.getElementById('navLinks').classList.toggle('active'); 
+}
+</script>
+
+</body>
+</html>
