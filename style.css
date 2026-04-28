@@ -1115,7 +1115,7 @@ th { background: var(--safari-green); color: white; text-transform: uppercase; f
 
     .nav-links {
         position: absolute;
-        top: 200px; /* consistent height */
+        top: 120px; /* consistent height */
         left: 0;
         width: 100%;
         background: #726449;
