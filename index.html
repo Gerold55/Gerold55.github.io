@@ -75,7 +75,7 @@
                 <a href="https://instagram.com" target="_blank" class="dd-social-icon">
                     <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
                 </a>
-                <a href="https://wa.me/255000000000" target="_blank" class="dd-social-icon">
+                <a href="https://wa.me/255749701719" target="_blank" class="dd-social-icon">
                     <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
                 </a>
             </div>
@@ -94,7 +94,7 @@
             <h4 class="dd-footer-title">Contact</h4>
             <p>Arusha, Tanzania</p>
             <a href="mailto:info@duskanddawnsafari.com">info@duskanddawnsafari.com</a>
-            <p>+255 000 000 000</p>
+            <p>+255 749 701 719</p>
         </div>
 
         <!-- Support (NEW) -->
@@ -112,6 +112,45 @@
     </div>
 </footer>
 
+<div id="dd-disclaimer-overlay"></div>
+
+<div id="dd-disclaimer-modal">
+    <h2>Important Notice</h2>
+    <p>
+        All safari itineraries, wildlife sightings, and travel details are subject to natural conditions 
+        and park regulations. Wildlife in Tanzania is completely wild and behaves very differently than 
+        animals in a zoo. During game drives, please exercise caution at all times and remain aware of 
+        your surroundings. For your safety, it is essential that you follow all instructions from your 
+        professional guide throughout the journey.
+    </p>
+    <button id="dd-disclaimer-btn">I Understand</button>
+</div>
+
+<script>
+    // Show modal on page load
+    window.onload = function() {
+        document.getElementById("dd-disclaimer-overlay").style.display = "block";
+        document.getElementById("dd-disclaimer-modal").style.display = "block";
+    };
+
+    // Only close when clicking the button
+    document.getElementById("dd-disclaimer-btn").onclick = function() {
+        document.getElementById("dd-disclaimer-overlay").style.display = "none";
+        document.getElementById("dd-disclaimer-modal").style.display = "none";
+    };
+
+    // Prevent clicking outside the modal from closing it
+    document.getElementById("dd-disclaimer-overlay").onclick = function(e) {
+        e.stopPropagation();
+    };
+
+    // Prevent ESC key from closing anything
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape") {
+            e.preventDefault();
+        }
+    });
+</script>
 
 <script>function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }</script>
 </body>
