@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dusk & Dawn Safari | Arusha, Tanzania</title>
+    <title>Turning Skies Safari | Arusha, Tanzania</title>
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -20,7 +20,7 @@
 
 <nav class="navbar">
     <a href="index.html" class="logo-container">
-        <img src="img/logo.png" alt="Genesis Logo" class="logo-img">
+        <img src="img/logo.png" alt="Turning Skies Logo" class="logo-img">
     </a>
     <div class="menu-toggle" onclick="toggleMenu()">
         <span></span><span></span><span></span>
@@ -47,7 +47,7 @@
     <section class="grid-2" style="align-items: center; margin-bottom: 100px;">
         <div>
 			<h2 style="font-size: 2.5rem; margin-bottom: 25px;">Directorial Precision</h2>
-			<p>At <strong>Dusk & Dawn Safari</strong>, we manage the technical heartbeat of your expedition. From our Arusha headquarters, we provide the <strong>Total Directorial Oversight</strong> necessary to ensure every mile of your journey is guided with professional rigor and integrity.</p>
+			<p>At <strong>Turning Skies Safaris</strong>, we manage the technical heartbeat of your expedition. From our Arusha headquarters, we provide the <strong>Total Directorial Oversight</strong> necessary to ensure every mile of your journey is guided with professional rigor and integrity.</p>
 			<br>
 			<p>We ensure every aspect of your journey is coordinated with precision, care, and unwavering attention to guest safety and comfort.</p>
 		</div>
@@ -93,7 +93,7 @@
         <div class="dd-footer-col">
             <h4 class="dd-footer-title">Contact</h4>
             <p>Arusha, Tanzania</p>
-            <a href="mailto:info@duskanddawnsafari.com">info@duskanddawnsafari.com</a>
+            <a href="mailto:info@turningskiessafari.com">info@turningskiessafari.com</a>
             <p>+255 749 701 719</p>
         </div>
 
@@ -107,7 +107,7 @@
     </div>
 
     <div class="dd-footer-bottom">
-        <p>&copy; 2026 Dusk & Dawn Safari</p>
+        <p>&copy; 2026 Turning Skies Safari</p>
         <p>TALA Licensed • Registered Arusha Office</p>
     </div>
 </footer>
@@ -127,24 +127,20 @@
 </div>
 
 <script>
-    // Show modal on page load
     window.onload = function() {
-        document.getElementById("dd-disclaimer-overlay").style.display = "block";
-        document.getElementById("dd-disclaimer-modal").style.display = "block";
+        document.getElementById("dd-disclaimer-overlay").classList.add("show");
+        document.getElementById("dd-disclaimer-modal").classList.add("show");
     };
 
-    // Only close when clicking the button
     document.getElementById("dd-disclaimer-btn").onclick = function() {
-        document.getElementById("dd-disclaimer-overlay").style.display = "none";
-        document.getElementById("dd-disclaimer-modal").style.display = "none";
+        document.getElementById("dd-disclaimer-overlay").classList.remove("show");
+        document.getElementById("dd-disclaimer-modal").classList.remove("show");
     };
 
-    // Prevent clicking outside the modal from closing it
     document.getElementById("dd-disclaimer-overlay").onclick = function(e) {
         e.stopPropagation();
     };
 
-    // Prevent ESC key from closing anything
     document.addEventListener("keydown", function(e) {
         if (e.key === "Escape") {
             e.preventDefault();
