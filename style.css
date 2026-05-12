@@ -127,10 +127,14 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--safari-gre
 }
 
 .hero-slim {
-    background: linear-gradient(to bottom, #f9f7f2, #f4efe7);
-    padding: 20px 20px;
+    background-image: url('img/views_from_tarangire_safari_lodge_logo.png');   /* must use url() */
+    background-size: cover;               /* fills the box */
+    background-position: center;          /* keeps subject centered */
+    background-repeat: no-repeat;         /* prevents tiling */
+    
+    padding: 20px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 0px;
     margin-bottom: 80px;
     border: 1px solid #e7e2d9;
     box-shadow: 0 8px 22px rgba(0,0,0,0.06);
@@ -139,13 +143,17 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--safari-gre
 .hero-title {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
-    color: var(--safari-green);
+    color: #ffffff;
     letter-spacing: 1px;
+    text-shadow:
+        0 2px 6px rgba(0,0,0,0.45),
+        0 0 2px rgba(0,0,0,0.35);
 }
+
 
 .hero-subtitle {
     font-size: 1.1rem;
-    color: #666;
+    color: #ffffff;
     margin-top: 10px;
     letter-spacing: 2px;
 }
